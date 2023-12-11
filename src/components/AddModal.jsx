@@ -3,22 +3,30 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 const AddModal = ({ show, name, setShow, setData, data }) => {
-  
+ 
   const [studentName, setStudentName] = useState("");
-  const [date, setDate] = useState();
+  const [date, setDate] = useState({});
   const handleSubmit = (e) => {
     e.preventDefault();
+  
+    // Tarih ve saat bilgisini ayrıştırma
+    const dateObject = new Date(date);
+    const formattedDate = dateObject.toLocaleDateString();
+    const formattedTime = dateObject.toLocaleTimeString();
+  
     setData([
       ...data,
       {
         id: new Date().getTime(),
-        patient: studentName,
-        day: date,
-        consulted: false,
-        doctor: name,
+        student: studentName,
+        day: formattedDate,
+        time: formattedTime,
+        booked: false,
+        teacher: name,
       },
     ]);
-   setShow(false)
+  
+    setShow(false);
   };
 
   return (
