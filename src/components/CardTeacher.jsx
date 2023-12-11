@@ -11,8 +11,8 @@ console.log(img);
     <Card style={{ width: '18rem' }} className='m-auto teacher' >
       <Card.Img variant="top" src={img} onClick={()=>setShow(!show)} className='teacher-img' />
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
+        <Card.Title className='card-title'>{name}</Card.Title>
+        <Card.Text className='card-text'>
         {dep}
         </Card.Text>
       </Card.Body>

@@ -51,6 +51,28 @@ span{
    font-size: 3rem;  
  } 
 
+ .card-title{
+
+    color: blue;
+    font-weight: 700;
+    font-family: cursive;
+ }
+
+ .card-text {
+    color: brown;
+    font-weight: 700;
+    font-family: cursive;
+    animation: blink 2s infinite;
+  }
+  
+
+  
+  @keyframes blink {
+    50% {
+      opacity: .6;
+    }
+  }
+
 .img-head{
     width: 250px;
     border-radius: 100px;
@@ -70,7 +92,7 @@ span{
     margin-bottom: 2rem;
     font-size: 3.5rem;
     font-weight: 300;
-    animation: lights 5s 750ms linear infinite;
+    animation: lights 3s 750ms linear infinite;
     color: hsl(230, 100%, 95%);
   }
   
