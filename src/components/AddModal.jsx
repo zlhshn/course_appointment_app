@@ -33,12 +33,12 @@ const AddModal = ({ show, name, setShow, setData, data }) => {
     <div>
       <Modal show={show} onHide={() => setShow(false)} animation={false}>
         <Modal.Header closeButton>
-          <Modal.Title>{name}</Modal.Title>
+          <Modal.Title className="text-danger">Instructor: {name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form >
             <Form.Group className="mb-3">
-              <Form.Label>Student Name</Form.Label>
+              <Form.Label className="text-primary">Student Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter a name"
@@ -47,7 +47,7 @@ const AddModal = ({ show, name, setShow, setData, data }) => {
               />
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Day&Time</Form.Label>
+              <Form.Label className="text-primary">Day&Time</Form.Label>
               <Form.Control
                 type="datetime-local"
                 onChange={(e) => setDate(e.target.value)}
