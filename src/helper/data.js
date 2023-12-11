@@ -62,7 +62,7 @@ export const teacherData = [
   {
     id: 7,
     name: "Karina Magnet",
-    dep: "Germany",
+    dep: "German",
     img: "./img/tch7.jpg",
   },
   {
