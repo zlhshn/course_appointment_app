@@ -92,7 +92,7 @@ span{
     margin-bottom: 2rem;
     font-size: 3.5rem;
     font-weight: 300;
-    animation: lights 3s 750ms linear infinite;
+    animation: lights 4s 750ms linear infinite;
     color: hsl(230, 100%, 95%);
   }
   
