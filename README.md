@@ -7,7 +7,7 @@ In this project, I aimed to reinforce the topics react prop drilling and lifting
 
 
 ## How does my project look
-
+![app](./app.gif)
 
 
 ## Usage / Content
