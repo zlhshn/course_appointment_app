@@ -11,7 +11,7 @@ const handleBooked=(id)=>{
   setData(data.map((item)=> item.id == id ? {...item, booked: !item.booked } : item))
 }
   return (
-    <div className="m-4">
+    <div className="p-4">
       <h3 className="text-center">Appointment List</h3>
       <Container>
         <Row className="text-left  p-3">

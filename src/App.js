@@ -10,10 +10,11 @@ function App() {
   const [data, setData] = useState(appointmentData);
 
   return (
-    <main><div className="text-center mt-4">
-       <img src="./img/lang.jpg" alt="" className="img-head" />
-    </div>
-     
+    <main>
+      <div className="text-center mt-3">
+        <img src="./img/lang.jpg" alt="" className="img-head" />
+      </div>
+
       <h1 className="text-center">LANGUAGE SCHOOL</h1>
       <Teachers data={data} setData={setData} />
       <Appointment data={data} setData={setData} />
