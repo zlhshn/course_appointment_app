@@ -8,8 +8,8 @@ const [show,setShow] = useState(false)
 console.log(img);
   return (
     <div>
-    <Card style={{ width: '18rem' }} >
-      <Card.Img variant="top" src={img} onClick={()=>setShow(!show)}/>
+    <Card style={{ width: '18rem' }} className='m-auto teacher' >
+      <Card.Img variant="top" src={img} onClick={()=>setShow(!show)} className='teacher-img' />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>

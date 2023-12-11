@@ -6,9 +6,9 @@ import CardTeacher from "./CardTeacher";
 
 const Teachers = ({ data, setData }) => {
   return (
-    <Container>
+    <Container className="text-center">
       <h2>Our Teachers</h2>
-      <Row className="g-4 p-4">
+      <Row className="g-4 p-4 ">
         {teacherData.map((item, index) => (
           <Col key={index}>
             <CardTeacher data={data} setData={setData} {...item} />

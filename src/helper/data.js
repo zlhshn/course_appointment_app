@@ -1,24 +1,24 @@
 export const appointmentData = [
   {
     id: 1,
-    patient: "Barry Vermont",
+    student: "Barry Vermont",
     day: new Date().toLocaleString(),
-    consulted: true,
-    teacher: "Dr. Hazel Valery",
+    booked: true,
+    teacher: "Hazel Valery",
   },
   {
     id: 2,
-    patient: "Sally Smith",
+    student: "Sally Smith",
     day: new Date().toLocaleString(),
-    consulted: false,
-    teacher: "Dr. Jessica White",
+    booked: false,
+    teacher: "Carolina White",
   },
   {
     id: 3,
-    patient: "Aaron Black",
+    student: "Aaron Black",
     day: new Date().toLocaleString(),
-    consulted: true,
-    teacher: "Dr. Jasmine Carpanter",
+    booked: true,
+    teacher: "Ashley Lee",
   },
 ]
 
