@@ -51,6 +51,10 @@ span{
    font-size: 3rem;  
  } 
 
+ h3{
+  color: hsl(230, 100%, 95%);
+ }
+
  .card-title{
 
     color: blue;
