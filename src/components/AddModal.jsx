@@ -10,17 +10,14 @@ const AddModal = ({ show, name, setShow, setData, data }) => {
     e.preventDefault();
   
     // Tarih ve saat bilgisini ayrıştırma
-    const dateObject = new Date(date);
-    const formattedDate = dateObject.toLocaleDateString();
-    const formattedTime = dateObject.toLocaleTimeString();
+  
   
     setData([
       ...data,
       {
         id: new Date().getTime(),
         student: studentName,
-        day: formattedDate,
-        time: formattedTime,
+        day: date,
         booked: false,
         teacher: name,
       },
