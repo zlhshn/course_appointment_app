@@ -1,6 +1,7 @@
 ## Course Appointment App
-## Description
+
 In this project, I aimed to reinforce the topics react prop drilling and lifting state up.
+
 
 ## Project Live Link
 [app](https://course-appointment-app.vercel.app/)
